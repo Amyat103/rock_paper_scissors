@@ -42,8 +42,18 @@ function playGame() {
     let playerScore = 0;
     let computerScore = 0;
     for (let i = 0; i < 5; i++) {
-        computerSelection = getComputerChoice();
+        let computerSelection = getComputerChoice();
         let playerSelection = window.prompt("Rock, Paper or Scissors?")
-        console.log(playRound(playerSelection, computerSelection));
+        let roundResult = playRound(playerSelection, computerSelection);
+        /* if statement to incriment */
+        if (roundResult.includes("You Win")) {
+            playerScore++;
+        }
+        else if (roundResult.includes("You Lose")) {
+            computerScore++;
+        }
     }
+    finalScore = "RESULT: You scored: " + playerScore + ". Computer scored: " + computerScore;
+    alert(finalScore);
 }
+
