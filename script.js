@@ -43,7 +43,7 @@ function playGame() {
     let computerScore = 0;
     for (let i = 0; i < 5; i++) {
         computerSelection = getComputerChoice();
-        playerSelection = "rock"
+        let playerSelection = window.prompt("Rock, Paper or Scissors?")
         console.log(playRound(playerSelection, computerSelection));
     }
 }
