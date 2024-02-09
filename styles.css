@@ -1,12 +1,14 @@
-.main {
+div {
     display: flex;
+}
+
+.main {
     align-items: center;
     flex-direction: column;
 }
 
-.choiceDiv {
-    display: flex;
-}
+/* .choiceDiv {
+} */
 
 .main .button {
     flex: 0 0 auto;
@@ -15,7 +17,12 @@
 }
 
 .body {
-    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.result,
+.counter {
     flex-direction: column;
     align-items: center;
 }

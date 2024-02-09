@@ -50,7 +50,7 @@ const countDiv = document.querySelector(".counter");
 // creating h3 for result
 const eachResult = document.createElement("h3");
 // creating h2 for count
-const scoreCount = document.createElement("h2");
+const scoreCount = document.createElement("h3");
 
 // play everytime its clicked, and add result
 allButton.addEventListener("click", (e) => {
