@@ -61,9 +61,13 @@ allButton.addEventListener("click", (e) => {
 
         // add result text into h3
         eachResult.textContent = roundRes;
-
         // append h3 div so it shows on website
         showResult.appendChild(eachResult);
+
+        // update counters
+        scoreCount.textContent = "Player Score: " + playerScore + "| Computer Score: " + computerScore;
+        // append to div
+        countDiv.appendChild(scoreCount);
 
         // alert if com or player reach 5
         if (playerScore >= 5) {
